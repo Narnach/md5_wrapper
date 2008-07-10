@@ -1,0 +1,22 @@
+Md5Wrapper
+=============
+
+Md5Wrapper wraps the command line utilities md5sum (Linux) and md5 (Mac).
+Detecting which utility should be used is based on the RUBY_PLATFORM constant.
+It allows obtaining the md5 hexdigest of a file and checking that a file has a specific md5 hexdigest.
+
+This plugin does not aim to provide all features offered by the md5(sum) utilities, but anyone who needs more features is welcome to add them.
+
+Example
+=======
+
+Get the md5 hexdigest for a file.
+  Md5Wrapper.get_md5sum('foo.txt') #=> 'abcdabcdabcdabcdabcdabcdabcdabcd'
+
+Check the correct md5 hexdigest against a file.
+  Md5Wrapper.check_md5sum('foo.txt', 'abcdabcdabcdabcdabcdabcdabcdabcd') #=> true
+  
+Check an incorrect md5 hexdigest against a file.
+  Md5Wrapper.check_md5sum('foo.txt', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') #=> false
+
+Copyright (c) 2008 Wes Oldenbeuving, released under the MIT license
