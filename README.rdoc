@@ -1,14 +1,23 @@
-Md5Wrapper
-=============
+= Md5Wrapper
 
 Md5Wrapper wraps the command line utilities md5sum (Linux) and md5 (Mac).
 Detecting which utility should be used is based on the RUBY_PLATFORM constant.
 It allows obtaining the md5 hexdigest of a file and checking that a file has a specific md5 hexdigest.
+It does not aim to provide all features offered by the md5(sum) utilities, but anyone who needs more features is welcome to add them.
 
-This plugin does not aim to provide all features offered by the md5(sum) utilities, but anyone who needs more features is welcome to add them.
+Md5Wrapper can be used as RubyGem or as Rails plugin.
 
-Example
-=======
+== Installation as Rails plugin
+
+From the Rails project root, execute:
+  script/plugin install git://github.com/Narnach/md5_wrapper.git
+
+== Installation as gem
+
+Install the gem by executing:
+  sudo gem install Narnach-md5_wrapper --remote --source http://gems.github.com
+
+== Example
 
 Get the md5 hexdigest for a file.
   Md5Wrapper.get_md5sum('foo.txt') #=> 'abcdabcdabcdabcdabcdabcdabcdabcd'
