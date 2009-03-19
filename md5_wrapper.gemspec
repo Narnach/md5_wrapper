@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
   s.name         = 'md5_wrapper'
   s.summary      = "Md5Wrapper wraps the command line utilities md5sum (Linux) and md5 (Mac)."
   s.description  = "It allows obtaining the md5 hexdigest of a file and checking that a file has a specific md5 hexdigest."
-  s.version      = '0.3.0'
+  s.version      = '0.3.1'
   s.date         = '2008-08-05'
   s.platform     = Gem::Platform::RUBY
   s.authors      = ["Wes Oldenbeuving"]

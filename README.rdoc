@@ -28,4 +28,18 @@ Check the correct md5 hexdigest against a file.
 Check an incorrect md5 hexdigest against a file.
   Md5Wrapper.check_md5sum('foo.txt', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') #=> false
 
+== Changelog
+
+== Version 0.3.1
+* Made Md5Wrapper work with filenames with spaces.
+
+== Version 0.3.0
+* Md5Wrapper is now available as RubyGem as well as Rails plugin
+* Added a simple test for each method on Md5Wrapper.
+* Renamed generated code to use Md5Wrapper instead of Md5sumWrapper.
+* Added plugin.
+
+== Contributors
+* Filip 'FiXato' Slagter
+
 Copyright (c) 2008 Wes Oldenbeuving, released under the MIT license
